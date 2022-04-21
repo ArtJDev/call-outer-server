@@ -45,5 +45,8 @@ public class Main {
                 .collect(Collectors.toList());
 
         stream.forEach(System.out::println);
+
+        response.close();
+        httpClient.close();
     }
 }
